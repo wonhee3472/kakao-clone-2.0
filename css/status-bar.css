@@ -5,8 +5,8 @@
     opacity: 0.7;
 }
 
-.status-bar i{ /*changing the font size for the icons in the status bar*/
-    font-size: 14px;
+.status-bar__icon{ /*changing the font size for the icons in the status bar*/
+    font-size: 13px;
 }
 
 .status-bar .status-bar__battery-level{
