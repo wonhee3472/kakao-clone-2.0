@@ -1,0 +1,14 @@
+.status-bar{
+    display: flex;
+    justify-content: space-between; /*two columns are getting pushed away from each other*/
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+.status-bar i{ /*changing the font size for the icons in the status bar*/
+    font-size: 14px;
+}
+
+.status-bar .status-bar__battery-level{
+    margin-left: 4px; /*putting small space to the left of "100%"*/
+}
