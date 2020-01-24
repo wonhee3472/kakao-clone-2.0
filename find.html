@@ -97,14 +97,23 @@
             </ul>
         </header>
         
-        <ul class="find__recommended">
-            <h5 class="find__title">
+       
+        <section class="find__title">
+            <div class="find__column">
                 Recommended Friends
-            </h5>
-            
+            </div>
+            <div class="find__column">
+                <span>
+                    More
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </div>
+        </section>
+        
+        <ul class="find__recommended">
             <li class="find__friend friend">
                 <div class="friend__column">
-                    <img class="g-avatar friend__avatar" src="../images/profile.jpg">
+                    <img class="friend__avatar" src="../images/profile.jpg">
                     <div class="friend__content">
                         <span class="friend__name">
                             Wonhee Yun
@@ -123,22 +132,28 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item">
-                <a href="friends.html" class="nav__list-link" target="_blank">
+                <a href="friends.html" class="nav__list-link">
                     <i class="far fa-user"></i>
                 </a>
             </li>
             <li class="nav__list-item">
-                <a href="index.html" class="nav__list-link" target="_blank">
+                <a href="index.html" class="nav__list-link">
+                    <div class="nav__badge">
+                        8
+                    </div>
                     <i class="far fa-comment"></i>
                 </a>
             </li>
             <li class="nav__list-item">
-                <a href="find.html" class="nav__list-link" target="_blank">
+                <a href="find.html" class="nav__list-link">
+                    <div class="nav__badge">
+                        14
+                    </div>
                     <i class="fas fa-search"></i>
                 </a>
             </li>
             <li class="nav__list-item">
-                <a href="more.html" class="nav__list-link" target="_blank">
+                <a href="more.html" class="nav__list-link">
                     <i class="fas fa-ellipsis-h"></i>
                 </a>
             </li>
