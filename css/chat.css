@@ -1,7 +1,13 @@
-.chat__write{
+.header-wrapper{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: white;
+}
+.chat__write--container{
     position:fixed;
-    bottom: 50px;
-    width: 80%;
+    bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,10 +16,41 @@
     right: 0; /*with position being fixed, we can center elements by assigining 0 to margin, left & right*/
     background-color: #fcfcfc;
     padding: 0 20px;
-    border-radius: 40px;
-    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025); 
+    /*box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025); */
     /*box-shadow: [horizonal offset] [vertical offset] [blur radius] [color]*/
     /*using a semi-transparent color like rgba(0, 0, 0, 0.4) is most common*/
+}
+
+.chat__write{
+    bottom: 0px;
+    width: 100%;
+    border-radius: 0;
+    padding: 20px 60px;
+    border: none;
+    font-size: 14px;
+}
+
+.chat__icon-left{
+    position: absolute;
+    left: 10px;
+}
+
+.chat__icon-right{
+    position: absolute;
+    right: 10px;
+}
+
+.chat__write:focus {
+    outline:none;
+}
+
+.chat__icon{
+    font-size: 18px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.chat__write:focus ~ .chat__icon{
+    opacity: 0;
 }
 
 .chat__write i{
@@ -37,16 +74,14 @@
 
 .chats-body{
     padding: 10px 0px;
+    padding-top: 100px;
+    background-image: url("../../images/ChatBackground.png");
+    min-height: 1000vh;
 }
 
 .chats-body .header,
 .chats-body .status-bar{
     padding: 0px 20px;
-}
-
-.chat-screen {
-    background-image: url("../../images/ChatBackground.png");
-    min-height: 100vh;
 }
 
 .chat-screen .chat__messages{
